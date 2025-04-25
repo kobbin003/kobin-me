@@ -15,6 +15,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<meta
+					name="facebook-domain-verification"
+					content="lfecbg7yemxmqvuq0giotjg3t4ilxb"
+				/>
+			</head>
 			<body
 				className={`${inter.className} bg-[#f0f0f0] text-gray-900 min-h-screen`}
 			>
