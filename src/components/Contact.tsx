@@ -1,6 +1,13 @@
+"use client";
 import * as motion from "motion/react-client";
+import { FormEvent, useRef } from "react";
 
 export default function Contact() {
+	const formRef = useRef(null);
+	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		console.log(e.target);
+	};
 	return (
 		<section
 			id="contact"
@@ -13,6 +20,8 @@ export default function Contact() {
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
+					onSubmit={handleSubmit}
+					ref={formRef}
 				>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 						<div>

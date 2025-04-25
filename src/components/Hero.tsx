@@ -10,9 +10,11 @@ export default function Hero() {
 					transition={{ duration: 0.5, delay: 0.2 }}
 					className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tighter mb-6"
 				>
-					Creative
+					{/* Creative
 					<br />
-					Developer
+					Developer */}
+					Web Developer
+					<br />& UI Builder
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0, y: 20 }}
