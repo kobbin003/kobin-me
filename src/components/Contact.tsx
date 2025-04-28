@@ -1,13 +1,27 @@
 "use client";
 import * as motion from "motion/react-client";
-import { FormEvent, useRef } from "react";
 
 export default function Contact() {
-	const formRef = useRef(null);
-	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		console.log(e.target);
-	};
+	// const formRef = useRef(null);
+	// const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+	// 	e.preventDefault();
+	// 	console.log(e.target);
+	// 	const formEl = e.target as HTMLFormElement;
+	// 	console.log(formEl.title);
+	// 	// const name = e.target["name"];
+	// 	const formData = new FormData(formEl);
+	// 	const entries = formData.entries();
+	// 	// console.log("formData: ", formData);
+	// 	// console.log(formData.get("name"));
+	// 	// console.log("entries: ", entries);
+	// 	// for (const [key, value] of formData.entries()) {
+	// 	// 	console.log(`${key}: ${value}`);
+	// 	// }
+	// 	const email = formData.get("email") as string;
+	// 	const name = formData.get("name") as string;
+	// 	const message = formData.get("message") as string;
+	// 	console.log(email, "", name, "", message);
+	// };
 	return (
 		<section
 			id="contact"
@@ -20,8 +34,11 @@ export default function Contact() {
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
-					onSubmit={handleSubmit}
-					ref={formRef}
+					// onSubmit={handleSubmit}
+					// ref={formRef}
+					target="_blank"
+					action="https://formsubmit.co/kobin369@gmail.com"
+					method="POST"
 				>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 						<div>
