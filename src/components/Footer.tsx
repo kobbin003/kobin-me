@@ -19,16 +19,19 @@ export default function Footer() {
 								href="https://github.com/kobbin003"
 								icon={<Github size={20} />}
 								label="GitHub"
+								target="_blank"
 							/>
 							<SocialLink
 								href="https://www.linkedin.com/in/kobin3/"
 								icon={<Linkedin size={20} />}
 								label="LinkedIn"
+								target="_blank"
 							/>
 							<SocialLink
-								href="mailto:kobin369@gmail.com"
+								href="/#contact"
 								icon={<Mail size={20} />}
 								label="Email"
+								target="_self"
 							/>
 						</div>
 					</div>
@@ -97,21 +100,23 @@ function SocialLink({
 	href,
 	icon,
 	label,
+	target,
 }: {
 	href: string;
 	icon: React.ReactNode;
 	label: string;
+	target: "_self" | "_blank";
 }) {
 	return (
-		<a
+		<Link
 			href={href}
-			target="_blank"
+			target={target}
 			rel="noopener noreferrer"
 			className="p-2 bg-gray-100 rounded-full text-gray-700 hover:bg-gray-900 hover:text-white transition-colors"
 			aria-label={label}
 		>
 			{icon}
-		</a>
+		</Link>
 	);
 }
 // import React from "react";

@@ -2,7 +2,7 @@ import Image from "next/image";
 import * as motion from "motion/react-client";
 import { projects } from "@/data/projects";
 import { ExternalLink } from "lucide-react";
-
+import "./project.css";
 export default function Projects() {
 	return (
 		<section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -20,7 +20,7 @@ export default function Projects() {
 							className="group"
 						>
 							<div className="relative overflow-hidden rounded-lg shadow-lg">
-								<h3 className="relative top-8 text-lg text-black/80 text-center">
+								<h3 className="inside-title relative top-10 text-lg text-black/80 text-center">
 									{project.title}
 								</h3>
 								<Image
@@ -28,10 +28,10 @@ export default function Projects() {
 									alt={project.title}
 									width={500}
 									height={400}
-									className=" h-64 aspect-square rounded object-contain transition-transform duration-300 group-hover:scale-110"
+									className="w-full h-64 aspect-square rounded object-contain transition-transform duration-300 group-hover:scale-110"
 									// className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
-								<div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent">
+								<div className="project-card-hover absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent">
 									<div className="text-white text-center p-4 flex flex-col gap-2 items-center">
 										<h3 className="text-2xl font-semibold mb-2">
 											{project.title}

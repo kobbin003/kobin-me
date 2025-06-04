@@ -1,0 +1,8 @@
+/* used to hide the title when we hover */
+.project-card-hover {
+	&:hover {
+		.inside-title {
+			display: none;
+		}
+	}
+}
