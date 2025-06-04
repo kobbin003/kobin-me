@@ -22,8 +22,8 @@ export default function Hero() {
 					transition={{ duration: 0.5, delay: 0.4 }}
 					className="text-xl text-gray-600 max-w-2xl"
 				>
-					I'm Your Name, a passionate developer creating beautiful and
-					functional web experiences. Let's build something amazing together.
+					I'm Kobin, a passionate developer creating beautiful and functional
+					web experiences. Let's build something amazing together.
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}

@@ -14,7 +14,13 @@ export default function Header() {
 					href="/"
 					className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors"
 				>
-					YN
+					<span
+						className=" inline-block text-2xl font-[allura] font-thin"
+						style={{ transform: "rotate(-15deg)" }}
+					>
+						Kobin__
+					</span>
+					{/* <img src="/cropped-kobin.svg" alt="logo" height={100} width={100} /> */}
 				</Link>
 				<div className="space-x-8">
 					{["Projects", "Contact"].map((item) => (
