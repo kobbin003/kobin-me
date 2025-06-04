@@ -7,13 +7,10 @@ export default function Header() {
 			initial={{ opacity: 0, y: -20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5 }}
-			className="py-6 px-4 sm:px-6 lg:px-8 backdrop-blur-sm bg-white/30 sticky top-0 z-10"
+			className="py-4 px-4 sm:px-6 lg:px-8 backdrop-blur-sm bg-white/30 sticky top-0 z-10"
 		>
 			<nav className="flex justify-between items-center max-w-7xl mx-auto">
-				<Link
-					href="/"
-					className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors"
-				>
+				<Link href="/" className=" hover:text-gray-700 transition-colors">
 					<span
 						className=" inline-block text-2xl font-[allura] font-thin"
 						style={{ transform: "rotate(-15deg)" }}
