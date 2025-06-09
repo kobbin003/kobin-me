@@ -20,7 +20,7 @@ export default function Header() {
 					{/* <img src="/cropped-kobin.svg" alt="logo" height={100} width={100} /> */}
 				</Link>
 				<div className="space-x-8">
-					{["Projects", "Contact"].map((item) => (
+					{["Learning", "Projects", "Contact"].map((item) => (
 						<Link
 							key={item}
 							href={`#${item.toLowerCase()}`}
